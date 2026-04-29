@@ -1,5 +1,7 @@
 # peter-evans/dockerhub-description
 
+A GitHub action to update a Docker Hub repository description from README.md
+
 Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at [https://github.com/peter-evans/dockerhub-description](https://github.com/peter-evans/dockerhub-description).
 
 ## Versions
