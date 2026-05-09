@@ -1,4 +1,6 @@
 {
-  "upstream": "peter-evans/dockerhub-description",
-  "version": "v5.0.0"
+  "owner": "peter-evans",
+  "repo": "dockerhub-description",
+  "version": "",
+  "url": "https://github.com/peter-evans/dockerhub-description"
 }
