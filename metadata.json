@@ -1,7 +1,0 @@
-{
-  "owner": "peter-evans",
-  "name": "dockerhub-description",
-  "visibility": "internal",
-  "description": "A GitHub action to update a Docker Hub repository description from README.md",
-  "block_publish": false
-}
