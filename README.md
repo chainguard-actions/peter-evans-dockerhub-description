@@ -8,7 +8,7 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 | Version | Tag | Upstream commit |
 |---------|-----|-----------------|
-| v5.0.0 | [`v5.0.0`](https://github.com/chainguard-actions/dockerhub-description/tree/v5.0.0) | — |
+| v5.0.0 | [`v5.0.0`](https://github.com/chainguard-actions/peter-evans--dockerhub-description/tree/v5.0.0) | — |
 
 ## Privacy
 
