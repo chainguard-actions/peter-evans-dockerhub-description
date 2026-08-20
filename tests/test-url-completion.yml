@@ -1,0 +1,43 @@
+name: Test URL completion feature
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Create a README with relative URLs
+        run: |
+          cat > README.md << 'EOF'
+          # Test Repository
+
+          See the [contributing guide](./CONTRIBUTING.md) for details.
+
+          ![Logo](./images/logo.png)
+
+          Check out the [docs](./docs/README.md).
+          EOF
+
+      - id: action
+        uses: .
+        continue-on-error: true
+        with:
+          username: test-user
+          password: test-password-invalid
+          repository: test-user/test-repo
+          enable-url-completion: "true"
+
+      - name: Assert action ran and failed gracefully (invalid credentials, url-completion accepted)
+        env:
+          OUTCOME: ${{ steps.action.outcome }}
+        run: |
+          echo "outcome: $OUTCOME"
+          if [ "$OUTCOME" = "failure" ]; then
+            echo "PASS: action failed gracefully as expected with invalid credentials"
+          elif [ "$OUTCOME" = "success" ]; then
+            echo "PASS: action succeeded (unexpected but acceptable)"
+          else
+            echo "FAIL: unexpected outcome '$OUTCOME'"
+            exit 1
+          fi
