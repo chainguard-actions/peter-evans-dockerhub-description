@@ -6,9 +6,9 @@ Hardened by [Chainguard](https://www.chainguard.dev) from the upstream action at
 
 ## Versions
 
-| Version | Tag | Upstream commit |
-|---------|-----|-----------------|
-| v5.0.0 | [`v5.0.0`](https://github.com/chainguard-actions/peter-evans-dockerhub-description/tree/v5.0.0) | [`1b9a80c`](https://github.com/peter-evans/dockerhub-description/commit/1b9a80c056b620d92cedb9d9b5a223409c68ddfa) |
+| Version | Tag | Upstream commit | Hardening report |
+|---------|-----|-----------------|------------------|
+| v5.0.0 | [`v5.0.0`](https://github.com/chainguard-actions/peter-evans-dockerhub-description/tree/v5.0.0) | [`1b9a80c`](https://github.com/peter-evans/dockerhub-description/commit/1b9a80c056b620d92cedb9d9b5a223409c68ddfa) | [`HARDENING.md`](https://github.com/chainguard-actions/peter-evans-dockerhub-description/blob/v5.0.0/HARDENING.md) |
 
 ## Privacy
 
